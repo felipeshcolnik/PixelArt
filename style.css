@@ -3,7 +3,7 @@
 }
 
 #board-size {
-  width: 200px
+  width: 200px;
 }
 
 .button {
@@ -62,13 +62,20 @@
   margin: 3px;
 }
 
+#randomize-palette {
+  margin-left: 49%;
+  margin-right: 49%;
+  margin-top: 15px;
+  border-radius: 3px;
+}
+
 section {
-  margin-top:0;
-  text-align:center
+  margin-top: 0;
+  text-align: center;
 }
 
 #title {
   background-color: grey;
-  margin: 0%;
+  margin: 0;
   text-align: center;
 }

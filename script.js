@@ -3,7 +3,7 @@ window.onload = function () {
 
 function createPalette() {
   const colorPalette = document.getElementById('color-palette');
-  const numOfColors = 4;
+  const numOfColors = 8;
   for (let index = 0; index < numOfColors; index += 1) {
     const color = document.createElement('div');
     color.classList.add('color');
@@ -22,6 +22,10 @@ function colorizePalette() {
   paletteColor[1].style.backgroundColor = `rgb(${randomNumbers()} , ${randomNumbers()} , ${randomNumbers()})`;
   paletteColor[2].style.backgroundColor = `rgb(${randomNumbers()} , ${randomNumbers()} , ${randomNumbers()})`;
   paletteColor[3].style.backgroundColor = `rgb(${randomNumbers()} , ${randomNumbers()} , ${randomNumbers()})`;
+  paletteColor[4].style.backgroundColor = `rgb(${randomNumbers()} , ${randomNumbers()} , ${randomNumbers()})`;
+  paletteColor[5].style.backgroundColor = `rgb(${randomNumbers()} , ${randomNumbers()} , ${randomNumbers()})`;
+  paletteColor[6].style.backgroundColor = `rgb(${randomNumbers()} , ${randomNumbers()} , ${randomNumbers()})`;
+  paletteColor[7].style.backgroundColor = 'white';
 }
 
 function deleteBoard() {
@@ -43,7 +47,7 @@ function paintPixel() {
   }
 }
 
-function createPixelBoard(imputNumber = 5) {
+function createPixelBoard(imputNumber = 15) {
   if (!imputNumber) {
     alert('Board inválido!');
     return;
@@ -93,7 +97,7 @@ function paletteRandomizer() {
 }
 
 function newSize() {
-  const imputNumber = parseInt(document.getElementById('board-size').value,10);
+  const imputNumber = parseInt(document.getElementById('board-size').value, 10);
   const button = document.getElementById('generate-board');
   button.addEventListener('click', createPixelBoard(imputNumber));
 }
